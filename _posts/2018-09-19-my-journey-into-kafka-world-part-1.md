@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Discovering Kafka"
+title: "My journey into Kafka world -- Part 1: Discovering Kafka"
 author: "SamAstro"
 categories: technologies
 tags: [documentation,tutorial]
