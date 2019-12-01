@@ -5,7 +5,7 @@
 
   <title>
     
-      404: Page not found | SamAstro
+      My journey into Kafka world -- Part 1: Discovering Kafka | SamAstro
     
   </title>
 
@@ -43,16 +43,19 @@
 
   <!-- Use Jekyll SEO plugin -->
   <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>404: Page not found | SamAstro</title>
+<title>My journey into Kafka world – Part 1: Discovering Kafka | SamAstro</title>
 <meta name="generator" content="Jekyll v3.6.3" />
-<meta property="og:title" content="404: Page not found" />
+<meta property="og:title" content="My journey into Kafka world – Part 1: Discovering Kafka" />
 <meta name="author" content="SamAstro" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The journey of an exstronomer into data science land" />
-<meta property="og:description" content="The journey of an exstronomer into data science land" />
+<meta name="description" content="What is Apache Kafka®? Apache Kafka is a distributed streaming platform capable of handling trillions of events a day. More on that here." />
+<meta property="og:description" content="What is Apache Kafka®? Apache Kafka is a distributed streaming platform capable of handling trillions of events a day. More on that here." />
 <meta property="og:site_name" content="SamAstro" />
+<meta property="og:image" content="/kafka.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-19T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"The journey of an exstronomer into data science land","author":{"@type":"Person","name":"SamAstro"},"@type":"WebPage","url":"/404.html","headline":"404: Page not found","@context":"https://schema.org"}</script>
+{"description":"What is Apache Kafka®? Apache Kafka is a distributed streaming platform capable of handling trillions of events a day. More on that here.","author":{"@type":"Person","name":"SamAstro"},"@type":"BlogPosting","url":"/technologies/my-journey-into-kafka-world-part-1.html","image":"/kafka.png","headline":"My journey into Kafka world – Part 1: Discovering Kafka","dateModified":"2018-09-19T00:00:00+00:00","datePublished":"2018-09-19T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/technologies/my-journey-into-kafka-world-part-1.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -111,15 +114,70 @@
 
 
     <div class="post-container">
-      <div class="page">
-  <h1 class="page-title">404: Page not found</h1>
+      <h1>
+  My journey into Kafka world -- Part 1: Discovering Kafka
+</h1>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/SIaFtAKnqBU?autoplay=1&start=3" frameborder="0" allowfullscreen></iframe>
 
-  <h1>Ahhhhh!</h1>
+  <img src="/assets/img/kafka.png">
 
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again, or search for it on the <a href="/menu/writing.html">archives page</a>.</p>
+
+<h2 id="what-is-apache-kafka">What is Apache Kafka®?</h2>
+<p>Apache Kafka is a distributed streaming platform capable of handling trillions
+of events a day. More on that
+<a href="https://www.confluent.io/what-is-apache-kafka/">here</a>.</p>
+
+<h2 id="how-to-have-kafka-up-and-running-in-no-time-on-your-computer">How to have Kafka up and running in no time on your computer?</h2>
+<p>The easiest way to have Kafka up and running is to use Docker.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker network create kafka-net
+<span class="nv">$ </span>docker run <span class="nt">-d</span> <span class="nt">--name</span> zookeeper <span class="nt">--network</span> kafka-net zookeeper:3.4.13
+<span class="nv">$ </span>docker run <span class="nt">-d</span> <span class="nt">--name</span> kafka <span class="nt">--network</span> kafka-net <span class="nt">--env</span> <span class="nv">ZOOKEEPER_IP</span><span class="o">=</span>zookeeper ches/kafka
+</code></pre></div></div>
+
+<h2 id="what-next">What next?</h2>
+
+
+<span class="post-date">
+  Written on
+  
+  September
+  19th,
+  2018
+  by
+  
+    SamAstro
+  
+</span>
+
+<div class="post-date">Feel free to share!</div>
+  <div class="sharing-icons">
+    <a href="https://twitter.com/intent/tweet?text=My journey into Kafka world -- Part 1: Discovering Kafka&amp;url=/technologies/my-journey-into-kafka-world-part-1.html" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=/technologies/my-journey-into-kafka-world-part-1.html&amp;title=My journey into Kafka world -- Part 1: Discovering Kafka" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://plus.google.com/share?url=/technologies/my-journey-into-kafka-world-part-1.html" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+  </div>
 </div>
+
+
+<div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+  </ul>
+</div>
+
+
+
 
     </div>
 
